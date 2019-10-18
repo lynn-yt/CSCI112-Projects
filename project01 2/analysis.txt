@@ -1,0 +1,4 @@
+
+For nQueensBrute the complexity is O(n^n) because every combination of the board needs to be checked for solutions. Since there are n rows and n columns, there are n^n combinations of queens. 
+
+For nQueensFancy the complexity is O(n^4). We get this because when we back track on a given queen, the maximum number of comparisons is n(n-1) since all rows must be checked and all columns except the current column must be checked. This is true for all queens, so we multiply by n, giving us n^2(n-1) which is equal to n^3. We multiply by n one more time since that is the complexity of the safeQueen function. This ultimately gets us a notation of O(n^4). 
